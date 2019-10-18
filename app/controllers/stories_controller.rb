@@ -49,6 +49,6 @@ class StoriesController < OpenReadController
 
   # Only allow a trusted parameter "white list" through.
   def story_params
-    params.require(:story).permit(:description)
+    params.require(:story).permit(:description, :character_id)
   end
 end
